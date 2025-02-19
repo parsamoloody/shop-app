@@ -4,7 +4,7 @@ import { BiLogIn } from "react-icons/bi";
 export default function RegisterButton({ styling }: { styling: string }) {
   return (
     <div className={`register h-full flex items-center ${styling}`}>
-      <BiLogIn className="text-4xl text-gray-500 lg:hidden" />
+      <BiLogIn className="text-3xl md:text-4xl text-gray-700 lg:hidden" />
       <div className="hidden lg:flex justify-center items-center rounded-lg border border-gray-700 h-10">
         <button className="px-3 flex justify-center text-sm items-center space-x-4">
           <span className="text-gray-500">
