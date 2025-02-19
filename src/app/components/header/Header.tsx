@@ -11,9 +11,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white border-gray-200 border-b pb-4 lg:order-last lg:mt-10 md:px-4 lg:px-6">
+    <nav className="bg-white border-gray-200 border-b pb-2 lg:order-last lg:mt-4 md:px-4 lg:px-6">
       <div className="flex flex-col">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 w-full">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-3 lg:p-x-2 lg:py-2 xl:py-1 w-full">
           <div className="w-full flex justify-between items-center">
             {/* Register */}
             <RegisterButton styling="md:hidden" />
@@ -33,7 +33,7 @@ const Navbar = () => {
           <div
             className={`${
               isOpen ? "translate-x-0" : "translate-x-full"
-            } z-50 fixed mt-[17rem] bg-white duration-200 ease-out w-screen right-0 md:w-96 md:pt-40 lg:mt-32 lg:pr-6`}
+            } z-50 fixed mt-[17rem] bg-white duration-200 ease-out w-screen right-0 md:w-96 md:pt-40 lg:mt-32 lg:pr-6 border-l `}
             id="navbar-multi-level"
           >
             <div className="hidden md:block">
@@ -74,11 +74,11 @@ const Navbar = () => {
 // Categories list
 const Categories = ({ styling }: { styling: string }) => {
   return (
-    <ul className={`${styling} font-medium  p-4 mt-4 border w-full border-gray-100 bg-white rtl:space-x-reverse md:mt-0 md:border-0`}>
+    <ul className={`${styling} font-medium h-full p-4 mt-4 border w-full border-gray-100 bg-white rtl:space-x-reverse md:mt-0 md:border-0`}>
       {categories[0]?.menu?.map((catName, index) => {
         return (
-          <li key={index}>
-            <Link href="#" className="block px-4 py-2 text-right hover:bg-gray-100">
+          <li key={index} className="">
+            <Link href="#" className="block px-4 py-2 text-[15px] text-right hover:bg-gray-100">
               {catName.name}
             </Link>
           </li>

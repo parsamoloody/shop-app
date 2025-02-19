@@ -19,7 +19,7 @@ const SearchForm = () => {
       <div className="flex space-x-6 lg:space-x-8">
       <div className="cart h-full flex items-center ">
         <BiCartAlt
-        className="text-4xl text-gray-500" />
+        className="text-[2.5rem] text-gray-500 lg:rounded-lg lg:border lg:border-gray-700 lg:p-2" />
     </div>
     <RegisterButton styling='hidden md:block' />
       </div>
@@ -49,7 +49,7 @@ const SearchForm = () => {
         <input
           type="search"
           id="search"
-          className="block text-right w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 bg-gray-200 md:py-4 lg:h-[4.5rem] dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          className="block text-right w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 bg-gray-200 md:py-4 lg:h-[3rem] dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder=" دنبال چی میگردی؟"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
