@@ -3,7 +3,7 @@
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from "next/image";
-import image1 from '@/../public/assets/img/banners/b1.webp'
+import image1 from '/assets/img/banners/b1.webp'
 import image2 from '@/../public/assets/img/banners/b2.webp'
 import image3 from '@/../public/assets/img/banners/b3.webp'
 import image4 from '@/../public/assets/img/banners/b4.gif'
