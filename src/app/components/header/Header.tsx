@@ -75,7 +75,7 @@ const Navbar = () => {
 const Categories = ({ styling }: { styling: string }) => {
   return (
     <ul className={`${styling} font-medium h-full p-4 mt-4 border w-full border-gray-100 bg-white rtl:space-x-reverse md:mt-0 md:border-0`}>
-      {categories[0]?.menu?.map((catName, index) => {
+      {categories.menu?.map((catName, index) => {
         return (
           <li key={index} className="">
             <Link href="#" className="block px-4 py-2 text-[15px] text-right hover:bg-gray-100">
@@ -84,7 +84,7 @@ const Categories = ({ styling }: { styling: string }) => {
           </li>
         );
       })}
-    </ul>
+    </ul> 
   );
 };
 
