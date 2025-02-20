@@ -51,7 +51,7 @@ const Story = () => {
             >
               <div className="image_container relative w-24 md:w-32 lg:w-32 md:h-32 lg:h-32 h-24 border-2 rounded-full border-sky-500 p-1">
                 <Image
-                  src={`/assets/img/story/${category.image}`}
+                  src={`/https://parsamoloody.github.io/shop-app/assets/img/story/${category.image}`}
                   alt={category.name}
                   fill={true}
                   className="category_image p-1"

@@ -20,7 +20,7 @@ const menu = [
 // Define slide categories
 const storyCategory = [
   { id: 1, name: "لوازم خانگی", link: "/home-appliances", image: "banner_CircleCategories_togRvq_5e1e5673-e7ac-4bee-8890-8d78f8e72b19.webp" },
-  { id: 2, name: "گوشی دکمه ای", link: "/button-phone", image: "banner_CircleCategories_C5nLFh_15d59e70-3031-4683-92aa-e84f695590c7.webp" },
+  { id: 2, name: "گوشی دکمه ای", link: "/button-phone"  , image: "banner_CircleCategories_C5nLFh_15d59e70-3031-4683-92aa-e84f695590c7.webp" },
   { id: 3, name: "ساعت‌ و‌ بند‌هوشمند", link: "/smart-watches", image: "banner_CircleCategories_BaqFKk_27ca3aa5-0431-442a-a173-d8a2ba931a41.webp" },
   { id: 4, name: "گیمینگ", link: "/gaming", image: "banner_CircleCategories_PqWXyJ_4e4115c0-62c8-47e5-926a-4cca67dfda89.webp" },
   { id: 5, name: "هدفون‌ و‌ هندزفری", link: "/headphones", image: "banner_CircleCategories_cPF7IB_e0939846-1cd4-4360-850e-712b3db1e564.webp" },
