@@ -1,4 +1,6 @@
 // Define subcategories separately to avoid redundancy
+
+
 const subCategories = [
   { id: 1, name: "اسپید", link: "/hp" },
   { id: 2, name: "اپل", link: "/apple" },
