@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: " فروشگاه اینترنتی  ",
   description: " technoglogy shop ",
 };
-
+ 
 export default function RootLayout({
   children,
 }: Readonly<{
