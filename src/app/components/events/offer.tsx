@@ -1,5 +1,6 @@
 "use client";
 import { BiChevronLeft } from "react-icons/bi";
+import TechnoOff from "../off-events/TechnoOff";
 
 
 const OfferEvent = () => {
@@ -14,6 +15,7 @@ const OfferEvent = () => {
                     تکنوآف
                 </p>
             </div>
+            <TechnoOff />
         </div>
     )
 }   

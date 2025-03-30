@@ -20,7 +20,7 @@ const menu = [
 // Define slide categories
 const storyCategory = [
   { id: 1, name: "لوازم خانگی", link: "/home-appliances", image: "banner_CircleCategories_togRvq_5e1e5673-e7ac-4bee-8890-8d78f8e72b19.webp" },
-  { id: 2, name: "گوشی دکمه ای", link: "/button-phone"  , image: "banner_CircleCategories_C5nLFh_15d59e70-3031-4683-92aa-e84f695590c7.webp" },
+  { id: 2, name: "گوشی دکمه ای", link: "/button-phone", image: "banner_CircleCategories_C5nLFh_15d59e70-3031-4683-92aa-e84f695590c7.webp" },
   { id: 3, name: "ساعت‌ و‌ بند‌هوشمند", link: "/smart-watches", image: "banner_CircleCategories_BaqFKk_27ca3aa5-0431-442a-a173-d8a2ba931a41.webp" },
   { id: 4, name: "گیمینگ", link: "/gaming", image: "banner_CircleCategories_PqWXyJ_4e4115c0-62c8-47e5-926a-4cca67dfda89.webp" },
   { id: 5, name: "هدفون‌ و‌ هندزفری", link: "/headphones", image: "banner_CircleCategories_cPF7IB_e0939846-1cd4-4360-850e-712b3db1e564.webp" },
@@ -35,10 +35,630 @@ const storyCategory = [
   { id: 14, name: "تبلت", link: "/mobile", image: "banner_CircleCategories_Mdfsao_e59192fd-eb46-4c74-ab2e-64c230a6b15e.webp" }
 ];
 
-// Combine into a single exportable object
-const categories = {
+const products = [
+  {
+    id: 0, name: "تلویزیون LED دوو مدل DSL-65SU1870 سایز 65 اینچ", price: 3699000,
+    discount: {
+      discountPercentage: 6,
+      limitTime: "2025-31-20T00:00:00.000Z",
+      isDiscount: true,
+    },
+    colors: ["#000000", "#FFFFFF", "#FF0000"],
+    mainFeautures: [
+      { key: "", value: "" },
+      { key: "", value: "" },
+      { key: "", value: "" },
+      { key: "", value: "" },
+    ],
+    images: [
+      {
+        src: "https://www.technolife.ir/image/gallery-2-TLP-31745_703b5862-ba99-494e-b0ce-3510c55d5850.png",
+        alt: "black هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: true,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-1-TLP-31745_8ed6cf7a-b795-479a-ab62-6225851d3a7a.png",
+        alt: "cyan هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-0-TLP-31745_14cbae3d-188b-479c-8700-93d1599761d7.png",
+        alt: "white هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-3-TLP-31745_8ed7c4f5-7ce5-4f34-8b38-e1c2f69a8c23.png",
+        alt: "multi color هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-5-TLP-31745_0bd96fb5-d23f-405a-8ca5-1dc046b91f3e.png",
+        alt: " air هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-6-TLP-31745_a33bb5a9-be93-4f62-bbbb-515b713cf79b.png",
+        alt: "twice هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+    ],
+    inventory: {
+      quantity: 10,
+      sold: 0,
+    },
+    category: {
+      id: 1,
+      name: "هدفون‌ و‌ هندزفری",
+    },
+  },
+  {
+    id: 1, name: "تلویزیون LED دوو مدل DSL-65SU1870 سایز 65 اینچ", price: 3699000,
+    discount: {
+      discountPercentage: 20,
+      limitTime: "2023-09-20T00:00:00.000Z",
+      isDiscount: true,
+    },
+    colors: ["#000000", "#FFFFFF", "#FF0000"],
+    mainFeautures: [
+      { key: "", value: "" },
+      { key: "", value: "" },
+      { key: "", value: "" },
+      { key: "", value: "" },
+    ],
+    images: [
+      {
+        src: "https://www.technolife.ir/image/gallery-2-TLP-72512_8acfb877-8b50-4caf-bebf-8eef86f7dad5.png",
+        alt: "black هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: true,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-1-TLP-31745_8ed6cf7a-b795-479a-ab62-6225851d3a7a.png",
+        alt: "cyan هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-0-TLP-31745_14cbae3d-188b-479c-8700-93d1599761d7.png",
+        alt: "white هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-3-TLP-31745_8ed7c4f5-7ce5-4f34-8b38-e1c2f69a8c23.png",
+        alt: "multi color هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-5-TLP-31745_0bd96fb5-d23f-405a-8ca5-1dc046b91f3e.png",
+        alt: " air هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-6-TLP-31745_a33bb5a9-be93-4f62-bbbb-515b713cf79b.png",
+        alt: "twice هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+    ],
+    inventory: {
+      quantity: 10,
+      sold: 0,
+    },
+    category: {
+      id: 1,
+      name: "هدفون‌ و‌ هندزفری",
+    },
+     
+  },
+  {
+    id: 2, name: "تلویزیون LED دوو مدل DSL-65SU1870 سایز 65 اینچ", price: 3699000,
+    discount: {
+      discountPercentage: 9,
+      limitTime: "2023-09-20T00:00:00.000Z",
+      isDiscount: true,
+    },
+    colors: ["#000000", "#FFFFFF", "#FF0000"],
+    mainFeautures: [
+      { key: "", value: "" },
+      { key: "", value: "" },
+      { key: "", value: "" },
+      { key: "", value: "" },
+    ],
+    images: [
+      {
+        src: "https://www.technolife.ir/image/gallery-0-TLP-103255_949cd6d0-bd2a-421c-8745-551b7eaf5cdf.png",
+        alt: "black هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: true,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-1-TLP-31745_8ed6cf7a-b795-479a-ab62-6225851d3a7a.png",
+        alt: "cyan هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-0-TLP-31745_14cbae3d-188b-479c-8700-93d1599761d7.png",
+        alt: "white هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-3-TLP-31745_8ed7c4f5-7ce5-4f34-8b38-e1c2f69a8c23.png",
+        alt: "multi color هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-5-TLP-31745_0bd96fb5-d23f-405a-8ca5-1dc046b91f3e.png",
+        alt: " air هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-6-TLP-31745_a33bb5a9-be93-4f62-bbbb-515b713cf79b.png",
+        alt: "twice هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+    ],
+    inventory: {
+      quantity: 10,
+      sold: 0,
+    },
+    category: {
+      id: 1,
+      name: "هدفون‌ و‌ هندزفری",
+    },
+     
+  },
+  {
+    id: 3, name: "تلویزیون LED دوو مدل DSL-65SU1870 سایز 65 اینچ", price: 3699000,
+    discount: {
+      discountPercentage: 5,
+      limitTime: "2023-09-20T00:00:00.000Z",
+      isDiscount: true,
+    },
+    colors: ["#000000", "#FFFFFF", "#FF0000"],
+    mainFeautures: [
+      { key: "", value: "" },
+      { key: "", value: "" },
+      { key: "", value: "" },
+      { key: "", value: "" },
+    ],
+    images: [
+      {
+        src: "https://www.technolife.ir/image/gallery-1-TLP-31745_8ed6cf7a-b795-479a-ab62-6225851d3a7a.png",
+        alt: "cyan هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-0-TLP-31745_14cbae3d-188b-479c-8700-93d1599761d7.png",
+        alt: "white هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-40-TLP-69015_bc9179ef-58c3-4c04-b411-ade731f25b55.png",
+        alt: "black هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: true,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-3-TLP-31745_8ed7c4f5-7ce5-4f34-8b38-e1c2f69a8c23.png",
+        alt: "multi color هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-5-TLP-31745_0bd96fb5-d23f-405a-8ca5-1dc046b91f3e.png",
+        alt: " air هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-6-TLP-31745_a33bb5a9-be93-4f62-bbbb-515b713cf79b.png",
+        alt: "twice هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+    ],
+    inventory: {
+      quantity: 10,
+      sold: 0,
+    },
+    category: {
+      id: 1,
+      name: "هدفون‌ و‌ هندزفری",
+    },
+     
+  },
+  {
+    id: 4, name: "تلویزیون LED دوو مدل DSL-65SU1870 سایز 65 اینچ", price: 3699000,
+    discount: {
+      discountPercentage: 3,
+      limitTime: "2023-09-20T00:00:00.000Z",
+      isDiscount: true,
+    },
+    colors: ["#000000", "#FFFFFF", "#FF0000"],
+    mainFeautures: [
+      { key: "", value: "" },
+      { key: "", value: "" },
+      { key: "", value: "" },
+      { key: "", value: "" },
+    ],
+    images: [
+      {
+        src: "https://www.technolife.ir/image/gallery-2-TLP-31745_703b5862-ba99-494e-b0ce-3510c55d5850.png",
+        alt: "black هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-1-TLP-31745_8ed6cf7a-b795-479a-ab62-6225851d3a7a.png",
+        alt: "cyan هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-0-TLP-31745_14cbae3d-188b-479c-8700-93d1599761d7.png",
+        alt: "white هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-0-TLP-81951_d67eadaf-afd7-419f-b978-ca321f184c83.png",
+        alt: "multi color هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: true,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-5-TLP-31745_0bd96fb5-d23f-405a-8ca5-1dc046b91f3e.png",
+        alt: " air هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-6-TLP-31745_a33bb5a9-be93-4f62-bbbb-515b713cf79b.png",
+        alt: "twice هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+    ],
+    inventory: {
+      quantity: 10,
+      sold: 0,
+    },
+    category: {
+      id: 1,
+      name: "هدفون‌ و‌ هندزفری",
+    },
+     
+  },
+  {
+    id: 5, name: "تلویزیون LED دوو مدل DSL-65SU1870 سایز 65 اینچ", price: 3699000,
+    discount: {
+      discountPercentage: 12,
+      limitTime: "2023-09-20T00:00:00.000Z",
+      isDiscount: true,
+    },
+    colors: ["#000000", "#FFFFFF", "#FF0000"],
+    mainFeautures: [
+      { key: "", value: "" },
+      { key: "", value: "" },
+      { key: "", value: "" },
+      { key: "", value: "" },
+    ],
+    images: [
+      {
+        src: "https://www.technolife.ir/image/gallery-2-TLP-31745_703b5862-ba99-494e-b0ce-3510c55d5850.png",
+        alt: "black هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-6-52722_a3dace15-4cb7-11ef-94e0-5dc9fd964217.png",
+        alt: "cyan هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: true,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-0-TLP-31745_14cbae3d-188b-479c-8700-93d1599761d7.png",
+        alt: "white هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-3-TLP-31745_8ed7c4f5-7ce5-4f34-8b38-e1c2f69a8c23.png",
+        alt: "multi color هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-5-TLP-31745_0bd96fb5-d23f-405a-8ca5-1dc046b91f3e.png",
+        alt: " air هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-6-TLP-31745_a33bb5a9-be93-4f62-bbbb-515b713cf79b.png",
+        alt: "twice هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+    ],
+    inventory: {
+      quantity: 10,
+      sold: 0,
+    },
+    category: {
+      id: 1,
+      name: "هدفون‌ و‌ هندزفری",
+    },
+     
+  },
+  {
+    id: 6, name: "تلویزیون LED دوو مدل DSL-65SU1870 سایز 65 اینچ", price: 3699000,
+    discount: {
+      discountPercentage: 2,
+      limitTime: "2023-09-20T00:00:00.000Z",
+      isDiscount: true,
+    },
+    colors: ["#000000", "#FFFFFF", "#FF0000"],
+    mainFeautures: [
+      { key: "", value: "" },
+      { key: "", value: "" },
+      { key: "", value: "" },
+      { key: "", value: "" },
+    ],
+    images: [
+      {
+        src: "https://www.technolife.ir/image/gallery-2-TLP-31745_703b5862-ba99-494e-b0ce-3510c55d5850.png",
+        alt: "black هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: true,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-1-TLP-31745_8ed6cf7a-b795-479a-ab62-6225851d3a7a.png",
+        alt: "cyan هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-0-TLP-31745_14cbae3d-188b-479c-8700-93d1599761d7.png",
+        alt: "white هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-3-TLP-31745_8ed7c4f5-7ce5-4f34-8b38-e1c2f69a8c23.png",
+        alt: "multi color هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-5-TLP-31745_0bd96fb5-d23f-405a-8ca5-1dc046b91f3e.png",
+        alt: " air هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-6-TLP-31745_a33bb5a9-be93-4f62-bbbb-515b713cf79b.png",
+        alt: "twice هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+    ],
+    inventory: {
+      quantity: 10,
+      sold: 0,
+    },
+    category: {
+      id: 1,
+      name: "هدفون‌ و‌ هندزفری",
+    },
+     
+  },
+  {
+    id: 7, name: "تلویزیون LED دوو مدل DSL-65SU1870 سایز 65 اینچ", price: 3699000,
+    discount: {
+      discountPercentage: 6,
+      limitTime: "2023-09-20T00:00:00.000Z",
+      isDiscount: true,
+    },
+    colors: ["#000000", "#FFFFFF", "#FF0000"],
+    mainFeautures: [
+      { key: "", value: "" },
+      { key: "", value: "" },
+      { key: "", value: "" },
+      { key: "", value: "" },
+    ],
+    images: [
+      {
+        src: "https://www.technolife.ir/image/gallery-2-TLP-31745_703b5862-ba99-494e-b0ce-3510c55d5850.png",
+        alt: "black هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: true,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-1-TLP-31745_8ed6cf7a-b795-479a-ab62-6225851d3a7a.png",
+        alt: "cyan هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-0-TLP-31745_14cbae3d-188b-479c-8700-93d1599761d7.png",
+        alt: "white هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-3-TLP-31745_8ed7c4f5-7ce5-4f34-8b38-e1c2f69a8c23.png",
+        alt: "multi color هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-5-TLP-31745_0bd96fb5-d23f-405a-8ca5-1dc046b91f3e.png",
+        alt: " air هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-6-TLP-31745_a33bb5a9-be93-4f62-bbbb-515b713cf79b.png",
+        alt: "twice هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+    ],
+    inventory: {
+      quantity: 10,
+      sold: 0,
+    },
+    category: {
+      id: 1,
+      name: "هدفون‌ و‌ هندزفری",
+    },
+     
+  },
+  {
+    id: 8, name: "تلویزیون LED دوو مدل DSL-65SU1870 سایز 65 اینچ", price: 3699000,
+    discount: {
+      discountPercentage: 16,
+      limitTime: "2023-09-20T00:00:00.000Z",
+      isDiscount: true,
+    },
+    colors: ["#000000", "#FFFFFF", "#FF0000"],
+    mainFeautures: [
+      { key: "", value: "" },
+      { key: "", value: "" },
+      { key: "", value: "" },
+      { key: "", value: "" },
+    ],
+    images: [
+      {
+        src: "https://www.technolife.ir/image/gallery-2-TLP-31745_703b5862-ba99-494e-b0ce-3510c55d5850.png",
+        alt: "black هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: true,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-1-TLP-31745_8ed6cf7a-b795-479a-ab62-6225851d3a7a.png",
+        alt: "cyan هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-0-TLP-31745_14cbae3d-188b-479c-8700-93d1599761d7.png",
+        alt: "white هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-3-TLP-31745_8ed7c4f5-7ce5-4f34-8b38-e1c2f69a8c23.png",
+        alt: "multi color هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-5-TLP-31745_0bd96fb5-d23f-405a-8ca5-1dc046b91f3e.png",
+        alt: " air هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-6-TLP-31745_a33bb5a9-be93-4f62-bbbb-515b713cf79b.png",
+        alt: "twice هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+    ],
+    inventory: {
+      quantity: 10,
+      sold: 0,
+    },
+    category: {
+      id: 1,
+      name: "هدفون‌ و‌ هندزفری",
+    },
+  },
+  {
+    id: 9, name: "تلویزیون LED دوو مدل DSL-65SU1870 سایز 65 اینچ", price: 3699000,
+    discount: {
+      discountPercentage: 22,
+      limitTime: "2023-09-20T00:00:00.000Z",
+      isDiscount: true,
+    },
+    colors: ["#000000", "#FFFFFF", "#FF0000"],
+    mainFeautures: [
+      { key: "", value: "" },
+      { key: "", value: "" },
+      { key: "", value: "" },
+      { key: "", value: "" },
+    ],
+    images: [
+      {
+        src: "https://www.technolife.ir/image/gallery-2-TLP-31745_703b5862-ba99-494e-b0ce-3510c55d5850.png",
+        alt: "black هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: true,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-1-TLP-31745_8ed6cf7a-b795-479a-ab62-6225851d3a7a.png",
+        alt: "cyan هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-0-TLP-31745_14cbae3d-188b-479c-8700-93d1599761d7.png",
+        alt: "white هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-3-TLP-31745_8ed7c4f5-7ce5-4f34-8b38-e1c2f69a8c23.png",
+        alt: "multi color هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-5-TLP-31745_0bd96fb5-d23f-405a-8ca5-1dc046b91f3e.png",
+        alt: " air هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+      {
+        src: "https://www.technolife.ir/image/gallery-6-TLP-31745_a33bb5a9-be93-4f62-bbbb-515b713cf79b.png",
+        alt: "twice هندزفری بلوتوثی شیائومی مدل Redmi Buds 5 Pro",
+        description: "",
+        main: false,
+      },
+    ],
+    inventory: {
+      quantity: 10,
+      sold: 0,
+    },
+    category: {
+      id: 1,
+      name: "هدفون‌ و‌ هندزفری",
+    },
+  },
+]
+
+const data = {
   menu,
-  storyCategory
+  storyCategory,
+  products
 };
 
-export default categories;
+export default data;

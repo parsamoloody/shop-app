@@ -3,7 +3,7 @@ import path from "path";
 
 const nextConfig: NextConfig = {
   distDir: 'dist', // Set the output directory
-  output: 'export', // Configure for static export (e.g., `next export`)
+  // output: 'export', // Configure for static export (e.g., `next export`)
   
   images: {
     remotePatterns:[

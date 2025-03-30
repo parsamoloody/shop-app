@@ -11,13 +11,16 @@ const vazirmatn = Vazirmatn({
 export const metadata: Metadata = {
   title: " فروشگاه اینترنتی  ",
   description: " technoglogy shop ",
+  icons: {
+    icon: "/assets/logo/svg/static_technolife-brand_new.svg",
+  }
 };
- 
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) { 
+}>) {
   return (
     <html lang="en">
       <body
